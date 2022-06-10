@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+
+    <title>HolidayHunt</title>
+
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="ttps://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"> 
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">                <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css"/>
+    <link rel="stylesheet" href="css/tooplate-style.css">                                   <!-- Templatemo style -->
+    <style>
+        body{
+   background-image: url("114.jpg");
+opacity:0.9;    } </style>
+</head>
+
+    <body>
+        <div class="tm-main-content" id="top">
+            <div class="tm-top-bar-bg"></div>
+            <div class="tm-top-bar" id="tm-top-bar">
+                <!-- Top Navbar -->
+                <div class="container">
+                    <div class="row">
+                        
+                        <nav class="navbar navbar-expand-lg narbar-light">
+                            <a class="navbar-brand mr-auto" href="">
+                                <img src="img/logo.png" alt="Site logo">
+                                HolidayHunt
+                            </a>
+                            <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                                <ul class="navbar-nav ml-auto">
+                                  <li class="nav-item">
+                                   <!-- <a class="nav-link" href="HolidayHunt.html">Home <span class="sr-only">(current)</span></a>
+                                  </li> -->
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="portfolio.html" target="_blank">Portfolio</a>
+                                  </li>
+                                 <!-- <li class="nav-item">
+                                    <a class="nav-link" href="Contact us.html" target="_blank">Contact Us</a> -->
+                                  </li>
+                                </ul>
+                            </div>                            
+                        </nav>            
+                    </div>
+                </div>
+            </div>
+            <div class="tm-section tm-bg-img" id="tm-section-1">
+                <div class="tm-bg-white ie-container-width-fix-2">
+                    <div class="container ie-h-align-center-fix">
+                        <div class="row">
+                            <div class="col-xs-12 ml-auto mr-auto ie-container-width-fix">
+                                <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
+                                    <div class="form-row tm-search-form-row">
+                                        <div class="form-group tm-form-element tm-form-element-100">
+                                            <i class="fa fa-map-marker fa-2x tm-form-element-icon"></i>
+                                            <input name="city" type="text" class="form-control" id="inputCity" placeholder="Type your destination...">
+                                        </div>
+                                        <div class="form-group tm-form-element tm-form-element-50">
+                                            <i class="fa fa-calendar fa-2x tm-form-element-icon"></i>
+                                            <input name="check-in" type="text" class="form-control" id="inputCheckIn" placeholder="Check In">
+                                        </div>
+                                        <div class="form-group tm-form-element tm-form-element-50">
+                                            <i class="fa fa-calendar fa-2x tm-form-element-icon"></i>
+                                            <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Check Out">
+                                        </div>
+                                    </div>
+                                    <div class="form-row tm-search-form-row">
+                                        <div class="form-group tm-form-element tm-form-element-2">                                            
+                                            <select name="adult" class="form-control tm-select" id="adult">
+                                                <option value="">Adult</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                            </select>
+                                            <i class="fa fa-2x fa-user tm-form-element-icon"></i>
+                                        </div>
+                                        <div class="form-group tm-form-element tm-form-element-2">                                            
+                                            <select name="children" class="form-control tm-select" id="children">
+                                                <option value="">Children</option>
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                            </select>
+                                            <i class="fa fa-user tm-form-element-icon tm-form-element-icon-small"></i>
+                                        </div>
+                                        <div class="form-group tm-form-element tm-form-element-2">
+                                            <select name="room" class="form-control tm-select" id="room">
+                                                <option value="">Room</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                            </select>
+                                            <i class="fa fa-2x fa-bed tm-form-element-icon"></i>
+                                        </div>
+                                        <div class="form-group tm-form-element tm-form-element-2">
+                                            <button type="submit" class="btn btn-primary tm-btn-search">Check Availability</button>
+                                        </div>
+                                      </div>
+                                      <div class="form-row clearfix pl-2 pr-2 tm-fx-col-xs">
+                                          <p class="tm-margin-b-0">*Terms and conditions applied.</p> <br> <br>
+                                          <p class="tm-margin-b-0"> *Childern are considered till the age of 10.</p>
+                                          <a href="#" class="ie-10-ml-auto ml-auto mt-1 tm-font-semibold tm-color-primary">Need Help?</a>
+                                      </div>
+                                </form>
+                            </div>                        
+                        </div>      
+                    </div>
+                </div>                  
+                
+            </div>
+            
+           <!--<div class="tm-section-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-center">
+                            <h2 class="tm-section-title">We are here to help you?</h2>
+                            <p class="tm-color-white tm-section-subtitle">Exclusivity?</p>
+                            <a href="discount.html " target="_blank" class="tm-color-white tm-btn-white-bordered">Subscribe to avail Offers & Discounts</a>
+                        </div>                
+                    </div>
+                </div>        
+            </div> -->
+            
+         <!--   <div class="tm-section tm-position-relative">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="tm-section-down-arrow">
+                    <polygon fill="#ee5057" points="0,0  100,0  50,60"></polygon>                   
+                </svg> 
+                <div class="container tm-pt-5 tm-pb-4">
+                    <div class="row text-center" color="white"
+                    text-shado="2px 2px 4px #000000">
+                        <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">                            
+                            <i class="fa tm-fa-6x fa-legal tm-color-primary tm-margin-b-20"></i>
+                            <h3 class="tm-color-primary tm-article-title-1">Why holidayHunt?</h3>
+                            <p> Established in 2000, HolidayHunt India's leading online travel company, has a profound understanding of Indian consumers travel needs and preferences. It offers a wide range of holiday packages in India and across the world, catering to various segments of travellers. While the dynamic or customized tour and travel packages give consumers an option to create and design their own holiday, the fixed departure holiday packages have a pre-designed itinerary; thus ensuring there is something to meet the holiday needs of every kind of traveller. </p>
+                            <a href="#" class="text-uppercase tm-color-primary tm-font-semibold"></a>
+                        </article>
+                        <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">                            
+                            <i class="fa tm-fa-6x fa-plane tm-color-primary tm-margin-b-20"></i>
+                            <h3 class="tm-color-primary tm-article-title-1">What does HolidayHunt offers?</h3>
+                            <p>HolidayHunt offers a hassle-free holiday wherein all your travel needs are taken care of.From distinctive honeymoon packages to exclusive tour packages for women, from itineraries designed for solo travellers, families with kids and for those who are young at heart - HolidayHunt has an answer to all our holiday needs.</p>
+                            <a href="#" class="text-uppercase tm-color-primary tm-font-semibold"></a>                            
+                        </article>
+                        <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">                           
+                            <i class="fa tm-fa-6x fa-life-saver tm-color-primary tm-margin-b-20"></i>
+                            <h3 class="tm-color-primary tm-article-title-1">How to book Holidays with holidayHunt? </h3>
+                            <p>The user-friendly HolidayHunt website make it easy for enthusiastic travellers to plan and book a holiday simply at the click of a button. Just use the filters and select the city you want to visit along with your travel dates, travel duration, specific preferences, if any, on hotels, kind of holiday, etc. and HolidayHunt offers you an extensive list of holiday packages to choose from. Pick any package that meets your needs. Else, you could also choose hotels of your choice, add sightseeing and activities to your list and have a package ready that best suits your requirement. You can choose to book your tour packages offline by dropping a query or chatting with our travel experts for immediate support. With HolidayHunt, planning and buying your ideal holiday has never been easier.</p>
+                            <a href="#" class="text-uppercase tm-color-primary tm-font-semibold"></a>                           
+                        </article>
+                    </div>        
+                </div>
+            </div> -->
+            
+            
+
+                
+               
+            
+          
+</body>
+</html>
+
